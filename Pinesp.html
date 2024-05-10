@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : Dasar Penggunaan HTML / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>Dharma Tech - Learn all technology</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#learn">LEARN</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#aboutme">ABOUT ME</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                                <li class="nav-item"><a href="https://www.arduino.cc/en/software" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>ESP 32</h1>
+            <p class="tagline">ESP32 adalah sebuah mikrokontroler opensource yang digunakan untuk kebutuhan IOT. ESP32 sendiri tidak jauh berbeda dengan ESP8266 yang familiar dipasaran, hanya saja ESP32 lebih komplek dibandingkan ESP8266, cocok untuk projek yang besar.</p>
+        </div>
+        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <!-- // end .section -->
+    <div class="section" id="learn">
+    <h2 style="text-align: center;">Pemahaman Pin dan Fungsi Dasar di ESP 32</h2>
+
+        <div class="container">
+            <div class="row">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <div>
+                    <p class="mb-4" style="text-align: justify; text-indent: 2em;">Pemahaman tentang pin dan fungsi dasar pada Arduino ESP32 menjadi landasan penting dalam mengembangkan proyek. Berikut adalah beberapa konsep dasar yang perlu dipahami:</p>  
+                    <p><b>1.Pin GPIO (General Purpose Input/Output):</b></p>
+                    <p>- ESP32 memiliki sejumlah pin GPIO yang dapat dikonfigurasi sebagai input atau output sesuai kebutuhan proyek.</p>
+                    <p>- Mempelajari peran masing-masing pin memungkinkan pengguna untuk mengendalikan perangkat eksternal seperti LED, sensor, atau aktuator.</p>
+                    <p>Pada board ESP32 DevKit terdapat 25 pin GPIO (General Purpose Input Output) dengan masing-masing pin mempunyai karakteristik sendiri-sendiri sebagai berikut:</p>
+                    <p><b>Pin hanya sebagai INPUT :</b></p>
+                    <p style="text-indent: 2em;">>GPIO 34</p>
+                    <p style="text-indent: 2em;">>GPIO 35</p>
+                    <p style="text-indent: 2em;">>GPIO 36</p>
+                    <p style="text-indent: 2em;">>GPIO 3</p>
+                    <p><b>Pin dengan internal pull up, dapat diseting melalui program :</b></p>
+                    <p style="text-indent: 2em;">>GPIO 14</p>
+                    <p style="text-indent: 2em;">>GPIO 16</p>
+                    <p style="text-indent: 2em;">>GPIO 17</p>
+                    <p style="text-indent: 2em;">>GPIO 18</p>
+                    <p style="text-indent: 2em;">>GPIO 19</p>
+                    <p style="text-indent: 2em;">>GPIO 21</p>
+                    <p style="text-indent: 2em;">>GPIO 22</p>
+                    <p style="text-indent: 2em;">>GPIO 23</p>
+                    <p><b>Pin tanpa internal pull up (dapat ditambahkan pull up eksternal sendiri) :</b></p>
+                    <p style="text-indent: 2em;">>GPIO 13</p>
+                    <p style="text-indent: 2em;">>GPIO 25</p>
+                    <p style="text-indent: 2em;">>GPIO 26</p>
+                    <p style="text-indent: 2em;">>GPIO 27</p>
+                    <p style="text-indent: 2em;">>GPIO 32</p>
+                    <p style="text-indent: 2em;">>GPIO 33</p>
+                    <p><b>2.Pin Ground (GND) dan Power:</b></p>
+                    <p>- Terdapat pin GND sebagai ground dan pin power yang berfungsi untuk memberikan daya pada ESP32.</p>
+                    <p>- Pemahaman yang baik tentang penggunaan pin ground dan power penting untuk memastikan kestabilan sirkuit.</p>
+                    <p><b>3.Pins Analog dan Digital:</b></p>
+                    <p>- ESP32 menyediakan pin analog dan digital.</p>
+                    <p>- Pin analog berfungsi untuk membaca nilai analog dari sensor seperti suhu atau potensiometer, sedangkan pin digital untuk sinyal on/off.</p>
+                    <p><b>4.Pins Khusus (e.g., RX, TX):</b></p>
+                    <p>- Beberapa pin memiliki fungsi khusus, seperti pin RX dan TX yang berfungsi untuk komunikasi serial.</p>
+                    <p>- Pemahaman tentang pin khusus ini anda perlukan saat mengintegrasikan ESP32 dengan perangkat lain atau modul eksternal.</p>
+                    <p><b>5.Referensi Pinout ESP32:</b></p>
+                    <p>- Gunakan referensi pinout resmi ESP32 untuk memahami letak dan fungsi setiap pin secara detil.</p>
+                    <p>- Referensi ini dapat anda unduh dari situs web resmi Espressif Systems.</p>
+              
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="aboutme">
+        <div class="container">
+            <div class="section-title">
+                <h3>Tentang Saya</h3>
+            </div>
+
+            <div class="testimonials owl-carousel">
+                <div class="testimonials-single">
+                    <img src="images/client.png" alt="client" class="client-img">
+                    <blockquote class="blockquote">Saya adalah mahasiswa semester 4 Program Studi Teknik Otomasi Jurusan Elektro Politeknik Negeri Bali.saya tinggal di Jimbaran.saya juga suka jalan jalan dan mengerjakan sebuah projek koding</blockquote>
+                    <h5 class="mt-4 mb-2">I Gede Dharma Danu Jaya</h5>
+                    <p class="text-primary">2215344001</p>
+                </div>
+ 
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- // end .section -->
+
+
+
+
+
+    <!-- // end .section -->
+
+
+
+    <!-- // end .section -->
+
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Jl Mutiara Jimbaran Blok 4 no 19 </p>
+                    <div class=" d-block d-sm-inline-block">
+                        <p class="mb-2">
+                            <span class="ti-email mr-2"></span> <a class="mr-4" href="dharmadanujaya@gmail.com">Dharmadanujaya@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="d-block d-sm-inline-block">
+                        <p class="mb-0">
+                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:087858885217">0878-5888-5217 </a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/palakpler093"><span class="ti-facebook"></span></a>
+                        <a href="https://www.instagram.com/dharma_gunting?igsh=ZGJydG5xeDV3ZGVo"><span class="ti-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+    <div class="section bg-gradient">
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a></small></p>
+
+        <small>
+            <a href="index.html" class="m-2">HOME</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small>
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

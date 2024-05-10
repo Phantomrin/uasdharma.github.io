@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : Dasar Penggunaan HTML / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>Dharma Tech - Dasar ESP 32</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#learn">LEARN</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#aboutme">ABOUT ME</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                                <li class="nav-item"><a href="https://www.arduino.cc/en/software" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>ESP 32</h1>
+            <p class="tagline">ESP32 adalah sebuah mikrokontroler opensource yang digunakan untuk kebutuhan IOT. ESP32 sendiri tidak jauh berbeda dengan ESP8266 yang familiar dipasaran, hanya saja ESP32 lebih komplek dibandingkan ESP8266, cocok untuk projek yang besar.</p>
+        </div>
+        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <!-- // end .section -->
+    <div class="section" id="learn">
+    <h2 style="text-align: center;">Memahami Dasar Penggunaan ESP32</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/iphonex.png" alt="dual phone" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                    <h2>Apa itu ESP32?</h2>
+                    <p class="mb-4" style="text-align: justify; text-indent: 2em;">Arduino ESP32 merupakan mikrokontroler yang revolusioner, dikembangkan untuk memberikan kekuatan dan fleksibilitas kepada para pengembang dalam berbagai proyek. Pada intinya, ESP32 adalah evolusi dari mikrokontroler sebelumnya dengan penambahan fitur-fitur hebat.</p>
+                    <p style="text-align: justify; text-indent: 2em;">Dengan memahami komponen-komponen utama ESP32, para pengguna dapat memanfaatkan potensinya sepenuhnya. Prosesor dual-core, modul WiFi, Bluetooth, dan sejumlah pin GPIO yang dapat dikonfigurasi memberikan keunggulan yang signifikan dalam hal kemampuan dan konektivitas. Perbandingan ESP32 dengan mikrokontroler Arduino lainnya dapat memberikan gambaran lebih jelas tentang mengapa ESP32 menjadi pilihan utama para pengembang.</p>  
+                    <p style="text-align: justify; text-indent: 2em;">Sebagai contoh, ESP32 menawarkan kemampuan untuk menjalankan kode pada dua core prosesor secara bersamaan, meningkatkan efisiensi dalam pengolahan tugas-tugas yang kompleks. Selain itu, modul WiFi dan Bluetooth memungkinkan pengguna untuk terhubung dengan perangkat lain atau internet dengan mudah, membuka pintu bagi proyek-proyek IoT yang menarik.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <h3>Instalasi Perangkat Lunak ESP 32</h3>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#communication">Step 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#schedule">Step 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages">Step 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#livechat">Step 4</a>
+                </li>
+
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="communication">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Unduh Arduino IDE:</h2>
+                            <p>> Kunjungi situs resmi Arduino untuk mengunduh versi terbaru dari Arduino IDE. </p>
+                            <p>> Ikuti petunjuk instalasi yang disediakan oleh sistem operasi yang Anda gunakan (Windows, macOS, atau Linux). </p>
+                            <p>> Setelah instalasi selesai, buka Arduino IDE di komputer Anda. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="schedule">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Tambahkan URL Board ESP32 ke Preferences Arduino IDE:</h2>
+                            <p>> Buka menu “File” > “Preferences” di Arduino IDE</p>
+                            <p>> Salin dan tempel URL board ESP32 ke dalam kolom “Additional Boards Manager URLs”: https://dl.espressif.com/dl/package_esp32_index.json </p>
+                            <p>> Klik “OK” untuk menyimpan perubahan. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Instal Board ESP32:</h2>
+                            <p>> Buka menu “Tools” > “Board” > “Boards Manager…”.</p>
+                            <p>> Cari “esp32” dan instal board ESP32 yang disediakan oleh Espressif Systems.</p>
+                            <p>> Setelah instalasi selesai, pilih board ESP32 yang sesuai dengan modul ESP32 yang Anda gunakan melalui menu “Tools” > “Board”.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="livechat">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Pilih Port Serial:</h2>
+                            <p>> Hubungkan ESP32 ke komputer melalui kabel USB.</p>
+                            <p>> Pilih port serial yang sesuai dengan ESP32 pada menu “Tools” > “Port”. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- // end .section -->
+
+    <div class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="d-flex flex-column flex-lg-row">
+                    <div>
+                        <h2>Menulis dan Memahami Kode Pertama</h2>
+                        <p>Langkah selanjutnya dalam memahami dasar penggunaan Arduino ESP32 adalah menulis dan memahami kode pertama. Berikut adalah langkah-langkah sederhana untuk membuat program pertama Anda: </p>
+                        <p>> Buka Arduino IDE yang telah anda install sebelumnya.</p>
+                        <p>> Pilih board ESP32 yang sesuai dengan modul yang Anda gunakan melalui menu “Tools” > “Board”.</p>
+                        <p>> Pilih port serial yang terhubung dengan ESP32 pada menu “Tools” > “Port”.</p>
+                        <p>> Buat program sederhana dengan menggunakan fungsi setup() dan loop(). Contoh:</p>
+                        <img src="images/screen1.jpg" alt="kodingan pertama" class="img-fluid">
+                        <p>> Klik ikon panah menghadap kanan (Upload) untuk mengunggah program ke ESP32.</p>
+                        <p>> Pantau status unggahan di bagian bawah Arduino IDE</p>
+                        <p>> Perhatikan LED_BUILTIN di ESP32 (biasanya built-in LED) akan berkedip sesuai dengan program.</p>
+                        <img src="images/screen2.jpg" alt="led kedip" class="img-fluid">
+                        <p><b>Kesimpulannya</b></p>
+                        <p style="text-align: justify; text-indent: 2em;">Dalam perjalanan memahami dasar penggunaan Arduino ESP32 untuk pemula, kita telah mengenal mikrokontroler yang inovatif ini dan langkah-langkah awal. Dari instalasi perangkat lunak hingga pemahaman tentang pin dan fungsi dasar, pembaca untuk membangun landasan yang kuat. Melalui eksplorasi penulisan kode pertama, pembaca dapat merasakan kegembiraan dalam mengendalikan perangkat dengan ESP32.</p>
+                        <p style="text-align: justify; text-indent: 2em;">Meskipun artikel ini memberikan wawasan awal, ini hanya permulaan petualangan yang luas dalam dunia Arduino ESP32. Dengan fondasi ini, para pemula dapat terus menjelajahi proyek-proyek lebih kompleks dan mendalam dalam mendukung minat mereka dalam dunia pemrograman mikrokontroler.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- // end .section -->
+
+    <div class="section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <small>FEATURES</small>
+                <h3>Spesifikasi dari ESP 32</h3>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#communication">Processors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#schedule">Memory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages">Wireless connectivity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#livechat">Security</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="communication">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+                            <h2>Processors</h2>
+                            <p>> Main processor: Tensilica Xtensa 32-bit LX6 microprocessor </p>
+                            <p>> Cores: 2 or 1 (depending on variation) </p>
+                            <p>> Clock frequency: up to 240 MHz </p>
+                            <p>> Performance: up to 600 DMIPS </p>
+                            <p>> Ultra low power co-processor: allows you to do ADC conversions, 
+                                computation, and level thresholds while in deep sleep. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="schedule">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Internal memory</h2>
+                            <p>> ROM: 448 KiB </p>
+                            <p>> SRAM: 520 KiB </p>
+                            <p>> RTC fast SRAM: 8 Ki </p>
+                            <p>> RTC slow SRAM: 8 KiB </p>
+                            <p>> Embedded flash:0 MiB (ESP32-D0WDQ6, ESP32-D0WD, and ESP32-S0WD chips),2 MiB (ESP32-D2WD chip)
+                                ,4 MiB (ESP32-PICO-D4 SiP module) </p>
+                            <p>> eFuse: 1 Kibit </p>
+                            <h2>external memory</h2>
+                            <p>> External flash & SRAM: ESP32 supports up to four 16 MiB external QSPI flashes 
+                                and SRAMs with hardware encryption based on AES to protect developers' 
+                                programs and data. ESP32 can access the external QSPI flash and SRAM 
+                                through high-speed caches. </p>
+                            <p>> Up to 16 MiB of external flash are memory-mapped onto the CPU code space,
+                                supporting 8-bit, 16-bit and 32-bit access. Code execution is supported. </p>
+                            <p>> Up to 8 MiB of external flash/SRAM memory are mapped onto the CPU data 
+                                space, supporting 8-bit, 16-bit and 32-bit access. Data-read is supported 
+                                on the flash and SRAM. Data-write is supported on the SRAM. </p>
+                        </div>
+                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <div>
+                            <h2>Wireless connectivity</h2>
+                            <p> > Wi-Fi: 802.11 b/g/n/e/i (802.11n @ 2.4 GHz up to 150 Mbit/s)</p>
+                            <p> > Bluetooth: v4.2 BR/EDR and Bluetooth Low Energy (BLE)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="livechat">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div>
+                            <h2>Security</h2>
+                            <p>> EEE 802.11 standard security features all supported, including WFA, 
+                                WPA/WPA2 and WAPI </p>
+                            <p>> Secure boo </p>
+                            <p>> Flash encryption </p>
+                            <p>> 1024-bit OTP, up to 768-bit for customer </p>
+                            <p>> Cryptographic hardware acceleration: AES, SHA-2, RSA, elliptic curve 
+                                cryptography (ECC), random number generator (RNG). </p> 
+                        </div>
+                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- // end .section -->
+
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- // end .section -->
+
+
+    <div class="section light-bg" id="aboutme">
+        <div class="container">
+            <div class="section-title">
+                <h3>Tentang Saya</h3>
+            </div>
+
+            <div class="testimonials owl-carousel">
+                <div class="testimonials-single">
+                    <img src="images/client.png" alt="client" class="client-img">
+                    <blockquote class="blockquote">Saya adalah mahasiswa semester 4 Program Studi Teknik Otomasi Jurusan Elektro Politeknik Negeri Bali.saya tinggal di Jimbaran.saya juga suka jalan jalan dan mengerjakan sebuah projek koding</blockquote>
+                    <h5 class="mt-4 mb-2">I Gede Dharma Danu Jaya</h5>
+                    <p class="text-primary">2215344001</p>
+                </div>
+ 
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- // end .section -->
+
+
+
+
+
+    <!-- // end .section -->
+
+
+
+    <!-- // end .section -->
+
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Jl Mutiara Jimbaran Blok 4 no 19 </p>
+                    <div class=" d-block d-sm-inline-block">
+                        <p class="mb-2">
+                            <span class="ti-email mr-2"></span> <a class="mr-4" href="dharmadanujaya@gmail.com">Dharmadanujaya@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="d-block d-sm-inline-block">
+                        <p class="mb-0">
+                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:087858885217">0878-5888-5217 </a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/palakpler093"><span class="ti-facebook"></span></a>
+                        <a href="https://www.instagram.com/dharma_gunting?igsh=ZGJydG5xeDV3ZGVo"><span class="ti-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .section -->
+    <div class="section bg-gradient">
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a></small></p>
+
+        <small>
+            <a href="index.html" class="m-2">HOME</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small>
+    </footer>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
